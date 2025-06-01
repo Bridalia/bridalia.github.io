@@ -1,7 +1,6 @@
 site_url: https://bridaliaubaldo.com
 backend:
-  name: github
-  repo: Bridalia/bridalia.github.io
+  name: git-gateway
   branch: main
 
 media_folder: "uploads"
