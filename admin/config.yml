@@ -1,0 +1,71 @@
+
+backend:
+  name: github
+  repo: Bridalia/bridalia.github.io
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "sobre_mi"
+    label: "Sobre mí"
+    files:
+      - label: "Sobre mí"
+        name: "sobre_mi"
+        file: "es/sobre-mi.md"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Contenido", name: "body", widget: "markdown" }
+
+  - name: "servicios"
+    label: "Servicios"
+    files:
+      - label: "Servicios"
+        name: "servicios"
+        file: "es/servicios.md"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Contenido", name: "body", widget: "markdown" }
+
+  - name: "certificaciones"
+    label: "Certificaciones"
+    files:
+      - label: "Certificaciones"
+        name: "certificaciones"
+        file: "es/certificaciones.md"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Contenido", name: "body", widget: "markdown" }
+
+  - name: "portafolio"
+    label: "Portafolio"
+    files:
+      - label: "Portafolio"
+        name: "portafolio"
+        file: "es/portafolio.md"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Contenido", name: "body", widget: "markdown" }
+
+  - name: "contacto"
+    label: "Contacto"
+    files:
+      - label: "Contacto"
+        name: "contacto"
+        file: "es/contacto.html"
+        fields:
+          - { label: "Encabezado", name: "title", widget: "string" }
+          - { label: "Descripción", name: "description", widget: "text" }
+          - { label: "Correo", name: "email", widget: "string" }
+          - { label: "WhatsApp", name: "whatsapp", widget: "string" }
+
+  - name: "blog"
+    label: "Blog"
+    folder: "es/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Fecha", name: "date", widget: "datetime" }
+      - { label: "Contenido", name: "body", widget: "markdown" }
