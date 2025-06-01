@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Bridalia CMS</title>
+
     <!-- Script para Netlify Identity -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
@@ -19,8 +20,12 @@
         });
       }
     </script>
-    
-    <!-- Carga el CMS -->
+
+    <!-- Carga e inicializa el CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+    <script>
+      window.CMS_MANUAL_INIT = true;
+      window.initCMS({ config: "/admin/config.yml" });
+    </script>
   </body>
 </html>
