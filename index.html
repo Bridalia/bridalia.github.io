@@ -1,32 +1,247 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXVSR2CJDM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FXVSR2CJDM');
+  </script>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tu Nombre | Portafolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Bridalia - Consultoría Odoo y Optimización de Procesos</title>
+  <meta name="description" content="Especialista en implementación y optimización de Odoo ERP. Transformo procesos empresariales para maximizar la eficiencia y productividad.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main class="card">
-    <img src="milogo.png" alt="Foto de perfil" class="profile-img" />
-    <h1>Tu Nombre</h1>
-    <p class="subtitle">Desarrollador(a) web • Creativo(a) • [Tu especialidad]</p>
-    <p class="description">
-      ¡Hola! Soy un(a) desarrollador(a) web apasionado(a) por crear experiencias digitales atractivas y funcionales. <br>
-      [Agrega una breve presentación sobre ti, tu experiencia o intereses.]
-    </p>
-    <div class="links">
-      <a href="https://github.com/Bridalia" aria-label="GitHub" target="_blank">
-        <img src="github-icon.svg" alt="GitHub">
-      </a>
-      <a href="https://www.linkedin.com/in/tuusuario" aria-label="LinkedIn" target="_blank">
-        <img src="linkedin-icon.svg" alt="LinkedIn">
-      </a>
-      <a href="mailto:tuemail@ejemplo.com" aria-label="Email">
-        <img src="email-icon.svg" alt="Email">
-      </a>
-      <!-- Agrega más enlaces si lo deseas -->
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="milogo.png" alt="Bridalia Logo" class="logo-img">
+        <span class="logo-text">Bridalia</span>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#inicio" class="nav-link">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a href="es/sobre-mi.md" class="nav-link">Sobre Mí</a>
+        </li>
+        <li class="nav-item">
+          <a href="es/servicios.md" class="nav-link">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a href="es/portafolio.md" class="nav-link">Portafolio</a>
+        </li>
+        <li class="nav-item">
+          <a href="es/certificaciones.md" class="nav-link">Certificaciones</a>
+        </li>
+        <li class="nav-item">
+          <a href="es/blog/" class="nav-link">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a href="es/contacto.html" class="nav-link cta-button">Contacto</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </div>
-  </main>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Especialista en <span class="highlight">Odoo ERP</span><br>
+          y Optimización de Procesos
+        </h1>
+        <p class="hero-subtitle">
+          Transformo procesos empresariales complejos en soluciones eficientes y escalables. 
+          Con más de 5 años de experiencia ayudando a empresas a maximizar su productividad 
+          mediante la implementación estratégica de Odoo.
+        </p>
+        <div class="hero-buttons">
+          <a href="es/contacto.html" class="btn btn-primary">Consulta Gratuita</a>
+          <a href="es/servicios.md" class="btn btn-secondary">Ver Servicios</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Proyectos Completados</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">98%</span>
+            <span class="stat-label">Satisfacción Cliente</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Años Experiencia</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="milogo.png" alt="Bridalia - Consultora Odoo" class="profile-image">
+        <div class="floating-card">
+          <div class="card-icon">📊</div>
+          <div class="card-content">
+            <h4>Optimización</h4>
+            <p>+40% eficiencia promedio</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Preview -->
+  <section class="services-preview">
+    <div class="container">
+      <h2 class="section-title">Servicios Especializados</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🏢</div>
+          <h3>Implementación Odoo</h3>
+          <p>Configuración completa y personalizada de Odoo ERP adaptada a tu negocio.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">⚙️</div>
+          <h3>Optimización de Procesos</h3>
+          <p>Análisis y mejora de flujos de trabajo para maximizar la eficiencia operativa.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📈</div>
+          <h3>Consultoría Estratégica</h3>
+          <p>Asesoramiento experto para la transformación digital de tu empresa.</p>
+        </div>
+      </div>
+      <div class="services-cta">
+        <a href="es/servicios.md" class="btn btn-outline">Ver Todos los Servicios</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Me -->
+  <section class="why-choose">
+    <div class="container">
+      <div class="why-choose-content">
+        <div class="why-choose-text">
+          <h2>¿Por qué elegir mis servicios?</h2>
+          <ul class="benefits-list">
+            <li>
+              <span class="benefit-icon">✓</span>
+              <div>
+                <strong>Experiencia Comprobada</strong>
+                <p>Más de 50 implementaciones exitosas de Odoo en diversos sectores</p>
+              </div>
+            </li>
+            <li>
+              <span class="benefit-icon">✓</span>
+              <div>
+                <strong>Enfoque Personalizado</strong>
+                <p>Cada solución se adapta específicamente a las necesidades de tu empresa</p>
+              </div>
+            </li>
+            <li>
+              <span class="benefit-icon">✓</span>
+              <div>
+                <strong>Soporte Continuo</strong>
+                <p>Acompañamiento completo durante y después de la implementación</p>
+              </div>
+            </li>
+            <li>
+              <span class="benefit-icon">✓</span>
+              <div>
+                <strong>ROI Garantizado</strong>
+                <p>Resultados medibles con retorno de inversión</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="why-choose-image">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>"Bridalia transformó completamente nuestros procesos. La implementación de Odoo redujo nuestros tiempos operativos en un 45%."</p>
+              <div class="testimonial-author">
+                <strong>María González</strong>
+                <span>CEO, TechCorp</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>¿Listo para transformar tu negocio?</h2>
+        <p>Agenda una consulta gratuita y descubre cómo Odoo puede revolucionar tus procesos empresariales.</p>
+        <div class="cta-buttons">
+          <a href="es/contacto.html" class="btn btn-primary btn-large">Consulta Gratuita</a>
+          <a href="https://www.linkedin.com/in/bridalia" class="btn btn-secondary btn-large" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="footer-logo">
+            <img src="milogo.png" alt="Bridalia Logo" class="footer-logo-img">
+            <span>Bridalia</span>
+          </div>
+          <p>Especialista en Odoo ERP y Optimización de Procesos</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Servicios</h4>
+            <ul>
+              <li><a href="es/servicios.md">Implementación Odoo</a></li>
+              <li><a href="es/servicios.md">Consultoría</a></li>
+              <li><a href="es/servicios.md">Optimización</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Recursos</h4>
+            <ul>
+              <li><a href="es/blog/">Blog</a></li>
+              <li><a href="es/certificaciones.md">Certificaciones</a></li>
+              <li><a href="es/portafolio.md">Portafolio</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Contacto</h4>
+            <ul>
+              <li><a href="es/contacto.html">Formulario</a></li>
+              <li><a href="mailto:bridalia@ejemplo.com">Email</a></li>
+              <li><a href="https://www.linkedin.com/in/bridalia" target="_blank">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Bridalia. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/analytics.js"></script>
 </body>
 </html>
