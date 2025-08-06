@@ -3,30 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Bridalia CMS</title>
-    <!-- Script para Netlify Identity -->
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
-    <!-- Script para activar el login de Netlify Identity -->
-    <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", (user) => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
-      }
-    </script>
-
-    <!-- Carga el CMS -->
-    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-
-    <!-- Inicializa el CMS manualmente con la configuración -->
-    <script>
-      window.CMS_MANUAL_INIT = true;
-      window.initCMS({ config: "/admin/config.yml" });
-    </script>
+    <!-- CMS eliminado -->
   </body>
 </html>
