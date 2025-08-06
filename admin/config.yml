@@ -1,6 +1,7 @@
-site_url: https://bridaliaubaldo.netlify.app
+site_url: https://bridalia.github.io
 backend:
-  name: git-gateway
+  name: github
+  repo: Bridalia/bridalia.github.io
   branch: main
 
 media_folder: "uploads"
